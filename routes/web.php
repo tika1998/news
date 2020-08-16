@@ -17,6 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/allNews', function () {
+    return view('admin.allNews');
+});
+
+Route::get('/adminPan', function () {
+    return view('admin.layoutsAd.app');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
